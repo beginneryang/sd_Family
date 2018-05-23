@@ -1,0 +1,282 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>企业介绍</title>
+    <link rel="stylesheet" href="Css/qiyejieshao.css">
+    <link rel="stylesheet" href="Css/base.css">
+    <link rel="stylesheet" type="text/css" href="Css/css.css">
+</head>
+
+<body>
+<!--    顶部-->
+    <div class="headerwrap">
+        <div class="header">
+            <a href="index.html"><h1><img class="logo" src="Images/base/logo.png" alt=""></h1></a>
+            
+            <img class="logotitle" src="Images/base/logotitle.jpg" alt="">
+            
+            <img class="telimg" src="Images/base/tel.png" alt="">
+
+            <div class="login_box">
+				<!--登录-->
+					<div class="zhezhao" id="zhezhao"></div>
+					<div class="login_infor" id="login_infor">
+						<h6 class="dl_close" id="dl_close">关闭</h6>
+						<h5 class="idpw1">账号密码登录</h5>
+						<form method="post" action="">
+						<p><label class="label_input" for="dl_username">用户名</label><input type="text" id="dl_username" class="text_field" placeholder="ID/用户名/手机号" /></p>  
+        				<p><label class="label_input" for="dl_password">密&nbsp;&nbsp;码</label><input type="text" id="dl_password" class="text_field"  placeholder="密码"/></p>  
+						</form>
+						<a href="" class="forget">忘记密码?</a>
+						<h5 class="idpw2" >短信验证码登录</h5>
+						<form method="post" action="">
+						<p><label class="label_input" for="tel">手机号</label><input type="tel" id="tel" class="text_field_2" placeholder="请在此输入手机号" /><input type="button" class="yzm" value="发送验证码"></p>  
+        				<p><label class="label_input" for="yzm">验证码</label><input type="text" id="yzm" class="text_field"  placeholder="请在此输入短信验证码"/></p>  
+						</form>
+						<h5 class="idpw3">其他方式登录</h5>
+						<ul class="dl_other">
+							<li><a href=""><img src="Images/share/qq.png"></a></li>
+							<li><a href=""><img src="Images/share/weixin.png"></a></li>
+							<li><a href=""><img src="Images/share/sina.png"></a></li>
+						</ul><br>
+						<input type="submit" value="登录" class="submit">
+					</div>
+					
+					<!--注册-->
+					<div class="zhezhao" id="zhezhao_2"></div>
+					<div class="login_infor" id="zc_infor">
+						<h6 class="dl_close" id="zc_close">关闭</h6>
+						<form method="post" action="" style="margin-top: 20px;">
+						<p><label class="label_input ltm" for="zc_username">账号</label><input type="text" id="zc_username" class="text_field ltm" placeholder="ID/用户名/手机号" /></p>  
+        				<p><label class="label_input ltm" for="zc_password">密码</label><input type="text" id="zc_password" class="text_field ltm"  placeholder="密码"/></p> 
+        				<p><label class="label_input ltm" for="zc_password_2">确认密码</label><input type="text" id="zc_password_2" class="text_field ltm"  placeholder="密码"/></p>  
+						<p><label class="label_input ltm" for="tel">手机号</label><input type="tel" id="tel" class="text_field_2 ltm" placeholder="请在此输入您的手机号" /><input type="button" class="yzm ltm" value="发送验证码"></p>  
+        				<p><label class="label_input ltm" for="yzm_2">验证码</label><input type="text" id="yzm_2" class="text_field ltm"  placeholder="请查看您的短信验证码并输入"/></p>  
+						</form>
+						<ul class="zc_other">
+						<li>其他方式登录:</li>
+						<li><a href=""><img src="Images/share/qq.png"></a></li>
+						<li><a href=""><img src="Images/share/weixin.png"></a></li>
+						<li><a href=""><img src="Images/share/sina.png"></a></li>
+						</ul>
+						<input type="submit" value="立即注册" class="submit">
+					</div>
+					<em id="denglu">登录</em><span class="part">|</span><em id="zhuce">注册</em>
+				</div>
+				
+				<ul class="telbox">
+					<li style="font-size: 16px; line-height: 16px;">咨询热线：</li>
+					<li style="font-size: 20px; line-height: 20px;color: #c30c22; font-weight: bold;margin-top: 14px;">18562624920</li>
+				</ul>
+			</div>
+		</div>
+<script> 
+ var zhezhao=document.getElementById("zhezhao"); 
+ var login_infor=document.getElementById("login_infor"); 
+ var denglu=document.getElementById("denglu"); 
+ var dl_close=document.getElementById("dl_close"); 
+	
+ denglu.onclick=function() 
+ { 
+  zhezhao.style.display="block"; 
+  login_infor.style.display="block"; 
+ } 
+ dl_close.onclick=function() 
+ { 
+  zhezhao.style.display="none"; 
+  login_infor.style.display="none";  
+ } 
+ 
+ 
+ 
+ var zhezhao_2=document.getElementById("zhezhao_2"); 
+ var zc_infor=document.getElementById("zc_infor"); 
+ var zhuce=document.getElementById("zhuce"); 
+ var zc_close=document.getElementById("zc_close"); 
+	
+ zhuce.onclick=function() 
+ { 
+  zhezhao_2.style.display="block"; 
+  zc_infor.style.display="block"; 
+ } 
+ zc_close.onclick=function() 
+ { 
+  zhezhao_2.style.display="none"; 
+  zc_infor.style.display="none";  
+ } 
+</script> 
+        </div>
+    </div>
+<div class="cl"></div>     
+<!--    导航-->
+    <div class="navwrap">
+        <ul class="navmain">
+                <li  class="nav"><a style="color: white;" href="index.html">首页</a></li>
+                <li  style="background-color: #c30c22; " class="nav"><a style="color: white;" href="Introduction.html">企业介绍</a></li>
+                <li class="nav"><a style="color: white;" href="news.html">企业动态</a></li>
+                <li class="nav"><a style="color: white;" href="lesson.html">在线课程</a></li>
+                <li class="nav"><a style="color: white;" href="teacherteam.html">讲师团队</a></li>
+                <li class="nav"><a style="color: white;" href="activity.html">往期活动</a></li>
+                <li class="nav"><a style="color: white;" href="join.html">代理加盟</a></li>
+                <li class="nav"><a style="color: white;" href="partner.html">合作伙伴</a></li>
+                <li class="nav"><a style="color: white;" href="#">家族网</a></li>
+                <li class="nav"><a style="color: white;" href="connection.html">联系我们</a></li>
+        </ul>
+    </div>
+<div class="cl"></div>
+
+
+<!--conten内容 -->
+<div class="cl"></div> 
+   <div class="content">
+      <div class="inner_c">        
+         <div class="left">
+              <h1 class="bt">企业介绍</h1>
+              <div class="rline"></div>
+                <ul>
+                   <li><a href="##">父母能量</a></li>
+                   <li><a hrefh="##">生命能量</a></li>
+                   <li><a href="##">智慧父母</a></li>
+                   <li class="teshu"><a href="##">心芽之旅</a></li>
+                   <li><img src="images/quantizhao.jpg" alt="图片"></li>
+               </ul>
+          </div>
+          <div class="right">
+              
+            <div class="return"> 
+            <p>当前位置&nbsp;:&nbsp;<a href="index.html">首页</a>&nbsp;>>&nbsp;
+            <a href="Introduction.html">企业介绍</a></p>
+            </div>
+<div class="intro">
+<div id = "tab">
+        <ul>
+        <li class="off">企业使命</li>
+        <li class="on">企业简介</li>
+        <li class="off">企业展示</li>
+        </ul>
+    <div id="firstPage" class="hide">
+            <p class="duty">
+            <img src="Images/base/intro.png" class="intro_bg2">
+ 			1&nbsp;.&nbsp;为天地立心，为民生立命<br>
+			2&nbsp;.&nbsp;帮女人管好男人，为男人教好女人<br>
+			3&nbsp;.&nbsp;帮父母育好孩子，为国家代好小家<br>
+			4&nbsp;.&nbsp;围绕国家四德建设，立足中华优秀传统文化，建立学校、<br>&nbsp;企业、社会全民、终身型教育体系，创建契合时代和国情的教学模式。<br>
+			5&nbsp;.&nbsp;做道德教育的基石，做培养圣贤的摇篮，为实现万国朝中，向世界各民族传播中华文化而奋斗。<br>
+			</p>
+    </div>
+    <div id="secondPage" class="show">
+            <p><img src="Images/index/qyjsimg.png" alt="" class="intro_bg1">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;北京圣德齐家文化传播有限公司以传统文化+互联网思维为发展道路，以传播传统文化为己任，依托公司多年经营的强大实力，未来计划成立中国传统文化传播促进会 ，在全国各地成立多家分公司，用心成就您的家庭幸福和子女教育的成功。 </p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;平台会员既是共修同学更是事业相互学习和分享的伙伴，正所谓天下没有陌生人只有来不及交往的朋友，未来的商业出现的模式一定是“平台化”，“伙伴化”，以及高度的战略合作关系出现，圣德齐家以文化为平台教育为纽带凝聚社会各界精英人士共聚一堂，平台将提供打造信誉体系，价值塑造体系为会员提供商务交流，渠道建设等附加功能，增加其功能性与附加值。圣德齐家创始人分别具备国际国内各类经济实体操作经验，金融，地产，高科技，企业，等领域有着相对的资源及丰富的人脉，以此为基础上一个具有国际化背景的平台将会带给我们无限的未来及期待，也必将会孵化出适合于当前市场的前景项目。</p>
+    </div>
+    <div id="thirdPage" class = "hide">
+       <ol class="intro_show">
+		   <li><span><img src="Images/wangqihuodong/1.jpg"></span>
+			   <a href=""><p>往期精彩活动</p></a>
+       	</li>
+		   <li><span><img src="Images/wangqihuodong/2.jpg"></span>
+			   <a href=""><p>往期精彩活动</p></a>
+       	</li>
+		   <li><span><img src="Images/wangqihuodong/3.jpg"></span>
+			   <a href=""><p>往期精彩活动</p></a>
+       	</li>
+		   <li><span><img src="Images/wangqihuodong/5.jpg"></span>
+			   <a href=""><p>往期精彩活动</p></a>
+       	</li>
+		   <li><span><img src="Images/wangqihuodong/7.jpg"></span>
+			   <a href=""><p>往期精彩活动</p></a>
+       	</li>
+		   <li><span><img src="Images/wangqihuodong/8.jpg"></span>
+			   <a href=""><p>往期精彩活动</p></a>
+       	</li>	
+       </ol>     
+	</div>
+</div>
+</div>
+ 					
+ 				</div>
+             
+             
+             
+              </div>
+              </div>
+          </div>
+
+<script type="text/javascript">
+// JS实现选项卡切换
+    window.onload = function(){
+    var myTab = document.getElementById("tab");    //整个div
+    var myUl = myTab.getElementsByTagName("ul")[0];//一个节点
+    var myLi = myUl.getElementsByTagName("li");    //数组
+    var myDiv = myTab.getElementsByTagName("div"); //数组
+
+    for(var i = 0; i<myLi.length;i++){
+        myLi[i].index = i;
+        myLi[i].onclick = function(){
+            for(var j = 0; j < myLi.length; j++){
+                myLi[j].className="off";
+                myDiv[j].className = "hide";
+            }
+            this.className = "on";
+            myDiv[this.index].className = "show";
+        }
+      }
+    }
+    </script>
+
+
+
+
+
+
+<div class="cl"></div>
+		<!--    底部导航-->
+		<div class="footernavwrap">
+			<div class="footernav">
+
+				<div class="box0">
+					<ul class="box1">
+						<h3>加入我们&nbsp;<br><san>WORK WITH US</san></h3>
+						<li class="text">如果您想成为家教师或者圣德齐家讲师来帮助别人，如果您想通过传播传统文化，实现自我价值，那就赶快加入我们吧！</li>
+					</ul>
+				</div>
+
+				<div style="margin-left: 30px;" class="box0">
+					<ul class="box1">
+						<h3>联系我们&nbsp;<br><span>CONTACT US</span></h3>
+						<li class="text">电话：18562624920 （温谛老师）<br>邮箱：shengdeqijia@163.com <br>地址：河北省保定市康泰国际10层<br></li>
+					</ul>
+				</div>
+				<div style="margin-left: 30px;" class="box0">
+					<ul class="box1">
+						<h3>分享到&nbsp;<br><span>SHARE TO</span></h3>
+						<li class="share ss">
+							<a href=""><img src="Images/share/weixin.png" alt=""></a>
+						</li>
+						<li class="share ss">
+							<a href=""><img src="Images/share/qq.png" alt=""></a>
+						</li>
+						<li class="share ss">
+							<a href=""><img src="Images/share/qzone.png" alt=""></a>
+						</li>
+						<li class="share ss">
+							<a href=""><img src="Images/share/sina.png" alt=""></a>
+						</li>
+					</ul>
+				</div>
+
+				<span class="map"><iframe src="map.html" width="370px" height="210px" frameborder="0" scrolling="no"></iframe></span>
+
+			</div>
+		</div>
+		<!--    //////////////////////////////////////////////////////////////-->
+
+		<!--    页脚-->
+		<div class="footer">
+			<p>版权所有：齐家文化传播有限公司 湘ICP备00000000号 技术支持：保定宜迅 后台管理</p>
+		</div>
+
+    
+</body>
+</html>

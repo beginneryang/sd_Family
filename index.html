@@ -1,0 +1,779 @@
+﻿<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>index</title>
+		<link rel="stylesheet" href="CSS/base.css">
+		<link rel="stylesheet" href="CSS/index.css">
+		<link rel="stylesheet" href="css/banner_lunbo.css">
+		<!--<script type="text/javascript" src="js/banner_lunbo.js"></script>-->
+		<!--<script type="text/javascript" src="js/zhezhao.js"></script>-->
+		<script type="text/javascript" src="js/int_lunbo.js"></script>
+		
+	</head>
+
+	<body>
+		<!--    //////////////////////////////////////////////////////////////-->
+		<!--    顶部-->
+		<div class="headerwrap">
+			<div class="header">
+				<a href="index.html"><h1><img class="logo" src="Images/base/logo.png" alt=""></h1></a>
+				<img class="logotitle" src="Images/base/logotitle.jpg" alt="">
+				<img class="telimg" src="Images/base/tel.png" alt="">
+
+				<div class="login_box">
+				<!--登录-->
+					<div class="zhezhao" id="zhezhao"></div>
+					<div class="login_infor" id="login_infor">
+						<h6 class="dl_close" id="dl_close">关闭</h6>
+						<h5 class="idpw1">账号密码登录</h5>
+						<form method="post" action="">
+						<p><label class="label_input" for="dl_username">用户名</label><input type="text" id="dl_username" class="text_field" placeholder="ID/用户名/手机号" /></p>  
+        				<p><label class="label_input" for="dl_password">密&nbsp;&nbsp;码</label><input type="text" id="dl_password" class="text_field"  placeholder="密码"/></p>  
+						</form>
+						<a href="" class="forget">忘记密码?</a>
+						<h5 class="idpw2" >短信验证码登录</h5>
+						<form method="post" action="">
+						<p><label class="label_input" for="tel">手机号</label><input type="tel" id="tel" class="text_field_2" placeholder="请在此输入手机号" /><input type="button" class="yzm" value="发送验证码"></p>  
+        				<p><label class="label_input" for="yzm">验证码</label><input type="text" id="yzm" class="text_field"  placeholder="请在此输入短信验证码"/></p>  
+						</form>
+						<h5 class="idpw3">其他方式登录</h5>
+						<ul class="dl_other">
+							<li><a href=""><img src="Images/share/qq.png"></a></li>
+							<li><a href=""><img src="Images/share/weixin.png"></a></li>
+							<li><a href=""><img src="Images/share/sina.png"></a></li>
+						</ul><br>
+						<input type="submit" value="登录" class="submit">
+					</div>
+					
+					<!--注册-->
+					<div class="zhezhao" id="zhezhao_2"></div>
+					<div class="login_infor" id="zc_infor">
+						<h6 class="dl_close" id="zc_close">关闭</h6>
+						<form method="post" action="" style="margin-top: 20px;">
+						<p><label class="label_input ltm" for="zc_username">账号</label><input type="text" id="zc_username" class="text_field ltm" placeholder="ID/用户名/手机号" /></p>  
+        				<p><label class="label_input ltm" for="zc_password">密码</label><input type="text" id="zc_password" class="text_field ltm"  placeholder="密码"/></p> 
+        				<p><label class="label_input ltm" for="zc_password_2">确认密码</label><input type="text" id="zc_password_2" class="text_field ltm"  placeholder="密码"/></p>  
+						<p><label class="label_input ltm" for="tel">手机号</label><input type="tel" id="tel" class="text_field_2 ltm" placeholder="请在此输入您的手机号" /><input type="button" class="yzm ltm" value="发送验证码"></p>  
+        				<p><label class="label_input ltm" for="yzm_2">验证码</label><input type="text" id="yzm_2" class="text_field ltm"  placeholder="请查看您的短信验证码并输入"/></p>  
+						</form>
+						<ul class="zc_other">
+						<li>其他方式登录:</li>
+						<li><a href=""><img src="Images/share/qq.png"></a></li>
+						<li><a href=""><img src="Images/share/weixin.png"></a></li>
+						<li><a href=""><img src="Images/share/sina.png"></a></li>
+						</ul>
+						<input type="submit" value="立即注册" class="submit">
+					</div>
+					<em id="denglu">登录</em><span class="part">|</span><em id="zhuce">注册</em>
+				</div>
+				
+				<ul class="telbox">
+					<li style="font-size: 16px; line-height: 16px;">咨询热线：</li>
+					<li style="font-size: 20px; line-height: 20px;color: #c30c22; font-weight: bold;margin-top: 14px;">18562624920</li>
+				</ul>
+			</div>
+		</div>
+<script> 
+ var zhezhao=document.getElementById("zhezhao"); 
+ var login_infor=document.getElementById("login_infor"); 
+ var denglu=document.getElementById("denglu"); 
+ var dl_close=document.getElementById("dl_close"); 
+	
+ denglu.onclick=function() 
+ { 
+  zhezhao.style.display="block"; 
+  login_infor.style.display="block"; 
+ } 
+ dl_close.onclick=function() 
+ { 
+  zhezhao.style.display="none"; 
+  login_infor.style.display="none";  
+ } 
+ 
+ 
+ 
+ var zhezhao_2=document.getElementById("zhezhao_2"); 
+ var zc_infor=document.getElementById("zc_infor"); 
+ var zhuce=document.getElementById("zhuce"); 
+ var zc_close=document.getElementById("zc_close"); 
+	
+ zhuce.onclick=function() 
+ { 
+  zhezhao_2.style.display="block"; 
+  zc_infor.style.display="block"; 
+ } 
+ zc_close.onclick=function() 
+ { 
+  zhezhao_2.style.display="none"; 
+  zc_infor.style.display="none";  
+ } 
+</script> 
+		<!--    //////////////////////////////////////////////////////////////-->
+
+		<!--    导航-->
+		<div class="menu">
+			<ul>
+				<li style="background-color: #c30c22; ">
+					<a href="index.html">首页</a>
+				</li>
+				<li class="nav">
+					<a href="Introduction.html">企业介绍</a>
+					<ul>
+						<li>
+							<a href="">企业动态</a>
+						</li>
+						<li>
+							<a href="">企业动态</a>
+						</li>
+						<li>
+							<a href="">企业动态</a>
+						</li>
+						<li>
+							<a href="">企业动态</a>
+						</li>
+						<li>
+							<a href="">企业动态</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="news.html">企业动态</a>
+					<ul>
+						<li>
+							<a href="">企业动态</a>
+						</li>
+						<li>
+							<a href="">企业动态</a>
+						</li>
+						<li>
+							<a href="">企业动态</a>
+						</li>
+						<li>
+							<a href="">企业动态</a>
+						</li>
+						<li>
+							<a href="">企业动态</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="lesson.html">在线课程</a>
+					<ul>
+						<li>
+							<a href="">企业动态</a>
+						</li>
+						<li>
+							<a href="">企业动态</a>
+						</li>
+						<li>
+							<a href="">企业动态</a>
+						</li>
+						<li>
+							<a href="">企业动态</a>
+						</li>
+						<li>
+							<a href="">企业动态</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="teacherteam.html">讲师团队</a>
+					<ul>
+						<li>
+							<a href="">企业动态</a>
+						</li>
+						<li>
+							<a href="">企业动态</a>
+						</li>
+						<li>
+							<a href="">企业动态</a>
+						</li>
+						<li>
+							<a href="">企业动态</a>
+						</li>
+						<li>
+							<a href="">企业动态</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="activity.html">往期活动</a>
+					<ul>
+						<li>
+							<a href="">企业动态</a>
+						</li>
+						<li>
+							<a href="">企业动态</a>
+						</li>
+						<li>
+							<a href="">企业动态</a>
+						</li>
+						<li>
+							<a href="">企业动态</a>
+						</li>
+						<li>
+							<a href="">企业动态</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="join.html">代理加盟</a>
+					<ul>
+						<li>
+							<a href="">企业动态</a>
+						</li>
+						<li>
+							<a href="">企业动态</a>
+						</li>
+						<li>
+							<a href="">企业动态</a>
+						</li>
+						<li>
+							<a href="">企业动态</a>
+						</li>
+						<li>
+							<a href="">企业动态</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="partner.html">合作伙伴</a>
+					<ul>
+						<li>
+							<a href="">企业动态</a>
+						</li>
+						<li>
+							<a href="">企业动态</a>
+						</li>
+						<li>
+							<a href="">企业动态</a>
+						</li>
+						<li>
+							<a href="">企业动态</a>
+						</li>
+						<li>
+							<a href="">企业动态</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="">家族网</a>
+					<ul>
+						<li>
+							<a href="">企业动态</a>
+						</li>
+						<li>
+							<a href="">企业动态</a>
+						</li>
+						<li>
+							<a href="">企业动态</a>
+						</li>
+						<li>
+							<a href="">企业动态</a>
+						</li>
+						<li>
+							<a href="">企业动态</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="connection.html">联系我们</a>
+				</li>
+			</ul>
+		</div>
+
+		<!--    //////////////////////////////////////////////////////////////-->
+
+		<!--    banner    -->
+		<!-- 代码 开始 -->
+	<div class="banner">
+ 	<div id="playBox">
+    <div class="pre"></div>
+    <div class="next"></div>
+    <div class="smalltitle">
+      <ul>
+        <li class="thistitle"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <ul class="oUlplay" style=" background-color:#ccc;">
+       <li><a href="" target="_blank"><img src="images/base/banner.jpg"></a></li>
+       <li><a href="" target="_blank"><img src="images/base/banner.jpg"></a></li>
+       <li><a href="" target="_blank"><img src="images/base/banner.jpg"></a></li>
+       <li><a href="" target="_blank"><img src="images/base/banner.jpg"></a></li>
+       <li><a href="" target="_blank"><img src="images/base/banner.jpg"></a></li>
+       <li><a href="" target="_blank"><img src="images/base/banner.jpg"></a></li>
+    </ul>
+  </div>
+ </div>
+		<!-- 代码 结束 -->
+
+		<!--    企业介绍-->
+		<div class="main1">
+			<a href="Introduction.html"><h2 class="maintitle">企业介绍</h2></a>
+			<p class="maintitle2">教育，是一个生命对另一个生命的唤醒。</p>
+			<div class="linebox">
+				<div class="line2"></div>
+				<div class="line1"></div>
+			</div>
+
+			<div class="img1"><img src="Images/index/qyjsimg.png" alt=""></div>
+
+			<p class="p1">北京圣德齐家文化传播有限公司</p>
+			<p class="p5">北京圣德齐家文化传播有限公司以传统文化+互联网思维为发展道路，以传播传统文化为己任，依托公司多年经营的强大实力，未来计划成立中国传统文化传播促进会 ，在全国各地成立多家分公司，用心成就您的家庭幸福和子女教育的成功。 平台会员既是共修同学更是事业相互学习和分享的伙伴，正所谓天下没有陌生人只有来不及交往的朋友，未来的商业出现的模式一定是“平台化”，“伙伴化”，以及高度的战略合作关系出现，圣德齐家以文化为平台教育为纽带凝聚社会各界精英人士共聚一堂……
+			</p>
+			<div class="imgbox">
+				<a href=""><img src="Images/index/qyjs1.png" alt=""></a>
+				<a class="p3" href="">企业介绍</a>
+			</div>
+			<div style="margin-left: 80px;" class="imgbox">
+				<a href=""><img src="Images/index/qyjs2.png" alt=""></a>
+				<a class="p3" href="">企业文化</a>
+			</div>
+			<div style="margin-left: 80px;" class="imgbox">
+				<a href=""><img src="Images/index/qyjs3.png" alt=""></a>
+				<a class="p3" href="">企业团队</a>
+			</div>
+			<div style="margin-left: 80px;" class="imgbox">
+				<a href=""><img src="Images/index/qyjs4.png" alt=""></a>
+				<a class="p3" href="">联系我们</a>
+			</div>
+
+		</div>
+		<!--    //////////////////////////////////////////////////////////////-->
+
+		<!--    企业动态-->
+		<div class="main2">
+			<a href="news.html"><h2 class="maintitle">企业动态</h2></a>
+			<p class="maintitle2">教育，是一个生命对另一个生命的唤醒。</p>
+			<div class="linebox">
+				<div class="line2"></div>
+				<div class="line1"></div>
+			</div>
+
+			<div class="box1">
+
+				<!-- 代码 开始 -->
+				<div id="int_playBox">
+					<div class="int_pre"></div>
+					<div class="int_next"></div>
+					<div class="int_smalltitle">
+						<ul>
+							<li class="int_thistitle"></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+					<ul class="int_oUlplay">
+						<li>
+							<a href="" target="_blank"><img src="images/index/qydtimg2.jpg" </a></li>
+						<li>
+							<a href="" target="_blank"><img src="images/index/qydtimg2.jpg" </a></li>
+						<li>
+							<a href="" target="_blank"><img src="images/index/qydtimg2.jpg" </a></li>
+						<li>
+							<a href="" target="_blank"><img src="images/index/qydtimg2.jpg" </a></li>
+						<li>
+							<a href="" target="_blank"><img src="images/index/qydtimg2.jpg" </a></li>
+						<li>
+							<a href="" target="_blank"><img src="images/index/qydtimg2.jpg" </a></li>
+					</ul>
+				</div>
+
+				<!-- 代码 结束 -->
+
+			</div>
+
+			<div class="box2">
+				<ul>
+					<a class="b2" href=""><img class="dian" src="Images/index/dian.png" alt="">12月16日涵徳汇博《商道》论坛圆满...</a>
+					<li class="p3">时间：2016年12月16日地点：北京涵徳汇博文化传播有限公司华北运营中心主办方：涵徳...</li>
+				</ul>
+				<div class="line"></div>
+
+				<ul>
+					<a class="b2" href=""><img class="dian" src="Images/index/dian.png" alt="">1月15日涵德汇博2016年年会圆满召开</a>
+					<li class="p3">2017年1月15日下午2点，北京涵徳汇博文化传播有限公司华北运营中心在保定市复兴中...</li>
+				</ul>
+				<div class="line"></div>
+
+				<ul>
+					<a class="b2" href=""><img class="dian" src="Images/index/dian.png" alt="">2017年2月-5月课程安排</a>
+					<li class="p3">时间：2016年12月16日地点：北京涵徳汇博文化传播有限公司华北运营中心主办方：涵徳...</li>
+				</ul>
+				<div class="line"></div>
+
+			</div>
+
+			<div class="box3">
+				<img style="margin-bottom: 8px;" src="Images/index/qydtimg2.png" alt="">
+				<a class="p4" href=""><img class="dian" src="Images/index/dian.png" alt="">2017年2月-5月课程安排</a>
+				<a class="p4date" href="">[07-04]</a>
+				<div class="line2"></div>
+				<a class="p4" href=""><img class="dian" src="Images/index/dian.png" alt="">12月16日涵徳汇博《商道》论坛...</a>
+				<a class="p4date" href="">[07-04]</a>
+				<div class="line2"></div>
+				<a class="p4" href=""><img class="dian" src="Images/index/dian.png" alt="">1月15日涵德汇博2016年年会圆...</a>
+				<a class="p4date" href="">[07-04]</a>
+				<div class="line2"></div>
+				<a class="p4" href=""><img class="dian" src="Images/index/dian.png" alt="">2017年2月-5月课程安排</a>
+				<a class="p4date" href="">[07-04]</a>
+				<div class="line2"></div>
+			</div>
+
+		</div>
+		<!--    //////////////////////////////////////////////////////////////-->
+
+		<!--    在线课程-->
+		<div class="main3">
+			<a href="lesson.html"><h2 class="maintitle">在线课程</h2></a>
+			<p class="maintitle2">教育，是一个生命对另一个生命的唤醒。</p>
+			<div class="linebox">
+				<div class="line2"></div>
+				<div class="line1"></div>
+			</div>
+
+			<p class=opacity-black>
+				<a style="margin-top: 32px; margin-right: 7px;" href="lesson_sp.html"><img src="Images/index/zxkc2.jpg" alt=""></a>
+			</p>
+			<p class=opacity-black>
+				<a style="margin-top: 32px; margin-right: 7px;" href="lesson_sp.html"><img src="Images/index/zxkc2.jpg" alt=""></a>
+			</p>
+			<p class=opacity-black>
+				<a style="margin-top: 32px;" href="lesson_sp.html"><img src="Images/index/zxkc2.jpg" alt=""></a>
+				<p class=opacity-black>
+					<a style="margin-top: 10px; margin-right: 7px;" href="lesson_sp.html"><img src="Images/index/zxkc2.jpg" alt=""></a>
+				</p>
+				<p class=opacity-black>
+					<a style="margin-top: 10px; margin-right: 7px;" href="lesson_sp.html"><img src="Images/index/zxkc2.jpg" alt=""></a>
+				</p>
+				<p>
+					<a style="margin-top: 10px;" href="lesson.html"><img src="Images/index/zxkc6.jpg" alt=""></a>
+				</p>
+		</div>
+		<!--    //////////////////////////////////////////////////////////////-->
+
+		<!--    讲师团队-->
+		<a href="teacherteam.html"><h2 class="maintitle">讲师团队</h2></a>
+			<p class="maintitle2">教育，是一个生命对另一个生命的唤醒。</p>
+			<div class="linebox">
+				<div class="line2"></div>
+				<div class="line1" ></div>
+			</div>
+		 <div class="main4wrap" >
+            
+            	<a href="###" class="prev3" id="zuo3">&lt;</a>
+				<a href="###" class="next3" id="you3">&gt;</a>
+           
+        <div class="box5" id="box3">
+				<ul class="list3 " id="ul3">
+					<li class="main4"><div class="teacherbg" style="margin-right: 36px; margin-left: 35px">
+					<div class="ccc"><a href=""><img class="teacherphoto" src="Images/index/teacher1.png" alt=""></a></div>
+					<a class="p1" href="">刘跃刚导师</a>
+					<p class="p2">北京圣德齐家文化传播有限公司董事长,保定市圣德传统文化研究会副会长,河北蒙域王子羊......</p>
+				</div>
+				<div class="teacherbg" style="margin-right: 36px;">
+					<div class="ccc"><a href=""><img class="teacherphoto" src="Images/index/teacher2.png" alt=""></a></div>
+					<a class="p1" href="">郑伟导师</a>
+					<p class="p2">北京圣德齐家文化传播有限公司CEO,北京天籁圣德文化传播有限公司创始人、执行董事，北京圣德齐家......</p>
+				</div>
+				<div class="teacherbg" style="margin-right: 36px;">
+					<div class="ccc"><a href=""><img class="teacherphoto" src="Images/index/teacher3.png" alt=""></a></div>
+					<a class="p1" href="">李占龙老师</a>
+					<p class="p2">北京圣德齐家文化传播发展有限公司监事,保定市圣德传统文化研究会 理事,北京涵德汇博......</p>
+				</div>
+				<div class="teacherbg">
+					<div class="ccc"><a href=""><img class="teacherphoto" src="Images/index/teacher4.png" alt=""></a></div>
+					<a class="p1" href="">周亚娟老师</a>
+					<p class="p2">北京圣德齐家文化传播有限公司公益讲师,保定圣德传统文化研究会副会长,保定市文体教......</p>
+				</div></li>
+                <li class="main4"><div class="teacherbg" style="margin-right: 36px; margin-left: 35px">
+					<div class="ccc"><a href=""><img class="teacherphoto" src="Images/index/teacher1.png" alt=""></a></div>
+					<a class="p1" href="">刘跃刚导师</a>
+					<p class="p2">北京圣德齐家文化传播有限公司董事长,保定市圣德传统文化研究会副会长,河北蒙域王子羊......</p>
+				</div>
+				<div class="teacherbg" style="margin-right: 36px;">
+					<div class="ccc"><a href=""><img class="teacherphoto" src="Images/index/teacher2.png" alt=""></a></div>
+					<a class="p1" href="">郑伟导师</a>
+					<p class="p2">北京圣德齐家文化传播有限公司CEO,北京天籁圣德文化传播有限公司创始人、执行董事，北京圣德齐家......</p>
+				</div>
+				<div class="teacherbg" style="margin-right: 36px;">
+					<div class="ccc"><a href=""><img class="teacherphoto" src="Images/index/teacher3.png" alt=""></a></div>
+					<a class="p1" href="">李占龙老师</a>
+					<p class="p2">北京圣德齐家文化传播发展有限公司监事,保定市圣德传统文化研究会 理事,北京涵德汇博......</p>
+				</div>
+				<div class="teacherbg">
+					<div class="ccc"><a href=""><img class="teacherphoto" src="Images/index/teacher4.png" alt=""></a></div>
+					<a class="p1" href="">周亚娟老师</a>
+					<p class="p2">北京圣德齐家文化传播有限公司公益讲师,保定圣德传统文化研究会副会长,保定市文体教......</p>
+				</div></li>
+                <li class="main4"><div class="teacherbg" style="margin-right: 36px;  margin-left: 35px">
+					<div class="ccc"><a href=""><img class="teacherphoto" src="Images/index/teacher1.png" alt=""></a></div>
+					<a class="p1" href="">刘跃刚导师</a>
+					<p class="p2">北京圣德齐家文化传播有限公司董事长,保定市圣德传统文化研究会副会长,河北蒙域王子羊......</p>
+				</div>
+				<div class="teacherbg" style="margin-right: 36px;">
+					<div class="ccc"><a href=""><img class="teacherphoto" src="Images/index/teacher2.png" alt=""></a></div>
+					<a class="p1" href="">郑伟导师</a>
+					<p class="p2">北京圣德齐家文化传播有限公司CEO,北京天籁圣德文化传播有限公司创始人、执行董事，北京圣德齐家......</p>
+				</div>
+				<div class="teacherbg" style="margin-right: 36px;">
+					<div class="ccc"><a href=""><img class="teacherphoto" src="Images/index/teacher3.png" alt=""></a></div>
+					<a class="p1" href="">李占龙老师</a>
+					<p class="p2">北京圣德齐家文化传播发展有限公司监事,保定市圣德传统文化研究会 理事,北京涵德汇博......</p>
+				</div>
+				<div class="teacherbg">
+					<div class="ccc"><a href=""><img class="teacherphoto" src="Images/index/teacher4.png" alt=""></a></div>
+					<a class="p1" href="">周亚娟老师</a>
+					<p class="p2">北京圣德齐家文化传播有限公司公益讲师,保定圣德传统文化研究会副会长,保定市文体教......</p>
+				</div></li>
+                <li class="main4"><div class="teacherbg" style="margin-right: 36px;  margin-left: 35px">
+					<div class="ccc"><a href=""><img class="teacherphoto" src="Images/index/teacher1.png" alt=""></a></div>
+					<a class="p1" href="">刘跃刚导师</a>
+					<p class="p2">北京圣德齐家文化传播有限公司董事长,保定市圣德传统文化研究会副会长,河北蒙域王子羊......</p>
+				</div>
+				<div class="teacherbg" style="margin-right: 36px;">
+					<div class="ccc"><a href=""><img class="teacherphoto" src="Images/index/teacher2.png" alt=""></a></div>
+					<a class="p1" href="">郑伟导师</a>
+					<p class="p2">北京圣德齐家文化传播有限公司CEO,北京天籁圣德文化传播有限公司创始人、执行董事，北京圣德齐家......</p>
+				</div>
+				<div class="teacherbg" style="margin-right: 36px;">
+					<div class="ccc"><a href=""><img class="teacherphoto" src="Images/index/teacher3.png" alt=""></a></div>
+					<a class="p1" href="">李占龙老师</a>
+					<p class="p2">北京圣德齐家文化传播发展有限公司监事,保定市圣德传统文化研究会 理事,北京涵德汇博......</p>
+				</div>
+				<div class="teacherbg">
+					<div class="ccc"><a href=""><img class="teacherphoto" src="Images/index/teacher4.png" alt=""></a></div>
+					<a class="p1" href="">周亚娟老师</a>
+					<p class="p2">北京圣德齐家文化传播有限公司公益讲师,保定圣德传统文化研究会副会长,保定市文体教......</p>
+				</div></li>
+                    <li class="main4"><div class="teacherbg" style="margin-right: 36px; margin-left: 35px;">
+					<div class="ccc"><a href=""><img class="teacherphoto" src="Images/index/teacher1.png" alt=""></a></div>
+					<a class="p1" href="">刘跃刚导师</a>
+					<p class="p2">北京圣德齐家文化传播有限公司董事长,保定市圣德传统文化研究会副会长,河北蒙域王子羊......</p>
+				</div>
+				<div class="teacherbg" style="margin-right: 36px;">
+					<div class="ccc"><a href=""><img class="teacherphoto" src="Images/index/teacher2.png" alt=""></a></div>
+					<a class="p1" href="">郑伟导师</a>
+					<p class="p2">北京圣德齐家文化传播有限公司CEO,北京天籁圣德文化传播有限公司创始人、执行董事，北京圣德齐家......</p>
+				</div>
+				<div class="teacherbg" style="margin-right: 36px;">
+					<div class="ccc"><a href=""><img class="teacherphoto" src="Images/index/teacher3.png" alt=""></a></div>
+					<a class="p1" href="">李占龙老师</a>
+					<p class="p2">北京圣德齐家文化传播发展有限公司监事,保定市圣德传统文化研究会 理事,北京涵德汇博......</p>
+				</div>
+				<div class="teacherbg">
+					<div class="ccc"><a href=""><img class="teacherphoto" src="Images/index/teacher4.png" alt=""></a></div>
+					<a class="p1" href="">周亚娟老师</a>
+					<p class="p2">北京圣德齐家文化传播有限公司公益讲师,保定圣德传统文化研究会副会长,保定市文体教......</p>
+				</div></li>
+					
+				</ul>
+				
+				
+				<ol id="ol3">
+					<li class="active"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ol>
+		</div>
+        </div>
+        <script>
+        
+		//先提出ol 和五个小点
+		var ol3 = document.getElementById('ol3');
+		var oli3 = ol3.getElementsByTagName('li');
+	//提出ul和li  五个图片
+		var ul3 = document.getElementById('ul3');
+		var uli3 = ul3.getElementsByTagName('li');
+
+		var zuo3 = document.getElementById('zuo3');
+		var you3 = document.getElementById('you3');
+
+		var stop = null;
+
+
+		var aaa = 0;
+
+
+		function tab3(){
+			for(var i=0;i<oli3.length;i++){
+					oli3[i].className = '';
+				}
+				
+				oli3[aaa].className = 'active';
+				ul3.style.left = -1200*aaa+'px';
+		}
+
+		// for(声明 初始值；条件；自增)
+		
+		
+		for(var i=0;i<oli3.length;i++){
+			oli3[i].index = i;
+			oli3[i].onclick = function (){
+				aaa = this.index;
+				tab3();
+
+				
+			}
+
+			you3.onclick = function (){
+				aaa++;
+				if(aaa==oli3.length){
+					aaa=0;
+				}
+				tab3();
+
+			}
+
+			zuo3.onclick = function (){
+				aaa--;
+				if(aaa==-1){
+					aaa=oli3.length-1;
+				}
+				tab3();
+
+			}
+
+
+		}		
+	
+
+        </script>
+		<!--    //////////////////////////////////////////////////////////////-->
+
+		<!--    往期活动-->
+		<div class="main5">
+			<a href="activity.html"><h2 class="maintitle">往期活动</h2></a>
+			<p class="maintitle2">教育，是一个生命对另一个生命的唤醒。</p>
+			<div class="linebox">
+				<div class="line2"></div>
+				<div class="line1"></div>
+			</div>
+
+			 <div id="demo" style="overflow:hidden;width:1130px; margin:0 auto; margin-top:10px;" align=center>
+	<table border=0 align=center cellpadding=0 cellspacing=0 cellspace=0 >
+		<tr><td valign=top bgcolor=ffffff id=marquePic1>
+	<table width='100%' border='0' cellspacing='20'><tr><td align=center><a href='#'><img src=Images/index/wqhd1.png><br><br>《圣德齐家》家庭教育系列讲座</a></td><td align=center><a href='#'><img src=Images/index/wqhd2.png><br><br>《圣德齐家》家庭教育系列讲座</a></td><td align=center><a href='#'><img src=Images/index/wqhd3.png border=0><br><br>《圣德齐家》家庭教育系列讲座</a></td><td align=center class="aaa"><a href='#'><img src="Images/index/wqhd4.png" border=0><br><br>《圣德齐家》家庭教育系列讲座</a></td><td align=center><a href='#'><img src=Images/index/wqhd1.png width=269 height=184 border=0><br><br>《圣德齐家》家庭教育系列讲座</a></td><td align=center><a href='#'><img src=Images/index/wqhd2.png border=0><br><br>《圣德齐家》家庭教育系列讲座</a></td><td align=center><a href='#'><img src="Images/index/wqhd3.png" border=0><br><br>《圣德齐家》家庭教育系列讲座</a></td></tr></table>
+		</td><td id=marquePic2 valign=top></td></tr>
+	</table></div>
+<script type="text/javascript">
+var speed=10
+marquePic2.innerHTML=marquePic1.innerHTML;
+function Marquee(){ 
+if(demo.scrollLeft>=marquePic1.scrollWidth){ 
+demo.scrollLeft=0
+}else{ 
+demo.scrollLeft++
+} 
+} 
+var MyMar=setInterval(Marquee,speed)
+demo.onmouseover=function() {clearInterval(MyMar)}
+demo.onmouseout=function() {MyMar=setInterval(Marquee,speed)} 
+</script>
+
+		</div>
+		<!--    //////////////////////////////////////////////////////////////-->
+
+		<!--    合作伙伴-->
+		<div class="main6">
+			<a href="partner.html"><h2 class="maintitle">合作伙伴</h2></a>
+			<p class="maintitle2">教育，是一个生命对另一个生命的唤醒。</p>
+			<div class="linebox">
+				<div class="line2"></div>
+				<div class="line1"></div>
+			</div>
+
+			<a href=""><img class="box1" src="Images/index/1.jpg" alt=""></a>
+			<a href=""><img class="box1" src="Images/index/2.jpg" alt=""></a>
+			<a href=""><img class="box1" src="Images/index/3.jpg" alt=""></a>
+			<a href=""><img class="box1" src="Images/index/4.jpg" alt=""></a>
+			<a href=""><img class="box1" src="Images/index/5.jpg" alt=""></a>
+			<a href=""><img class="box1" src="Images/index/6.jpg" alt=""></a>
+			<a href=""><img class="box1" src="Images/index/7.jpg" alt=""></a>
+			<a href=""><img class="box2" src="Images/index/8.jpg" alt=""></a>
+			<a href=""><img class="box3" src="Images/index/9.jpg" alt=""></a>
+			<a href=""><img class="box3" src="Images/index/10.jpg" alt=""></a>
+			<a href=""><img class="box3" src="Images/index/11.jpg" alt=""></a>
+			<a href=""><img class="box3" src="Images/index/12.jpg" alt=""></a>
+			<a href=""><img class="box3" src="Images/index/13.jpg" alt=""></a>
+			<a href=""><img class="box3" src="Images/index/14.jpg" alt=""></a>
+			<a href=""><img class="box3" src="Images/index/15.jpg" alt=""></a>
+			<a href=""><img class="box4" src="Images/index/16.jpg" alt=""></a>
+
+		</div>
+		<!--    //////////////////////////////////////////////////////////////-->
+
+		<!--    底部导航-->
+		<div class="footernavwrap">
+			<div class="footernav">
+
+				<div class="box0">
+					<ul class="box1">
+						<h3>加入我们&nbsp;<br><span>WORK WITH US</span></h3>
+						<li class="text">如果您想成为家教师或者圣德齐家讲师来帮助别人，如果您想通过传播传统文化，实现自我价值，那就赶快加入我们吧！</li>
+					</ul>
+				</div>
+
+				<div style="margin-left: 30px;" class="box0">
+					<ul class="box1">
+						<h3>联系我们&nbsp;<br><span>CONTACT US</span></h3>
+						<li class="text">电话：18562624920 （温谛老师）<br>邮箱：shengdeqijia@163.com <br>地址：河北省保定市康泰国际10层<br></li>
+					</ul>
+				</div>
+				<div style="margin-left: 30px;" class="box0">
+					<ul class="box1">
+						<h3>分享到&nbsp;<br><span>SHARE TO</span></h3>
+						<li class="share ss">
+							<a href=""><img src="Images/share/weixin.png" alt=""></a>
+						</li>
+						<li class="share ss">
+							<a href=""><img src="Images/share/qq.png" alt=""></a>
+						</li>
+						<li class="share ss">
+							<a href=""><img src="Images/share/qzone.png" alt=""></a>
+						</li>
+						<li class="share ss">
+							<a href=""><img src="Images/share/sina.png" alt=""></a>
+						</li>
+					</ul>
+				</div>
+
+				<span class="map"><iframe src="map.html" width="370px" height="210px" frameborder="0" scrolling="no"></iframe></span>
+
+			</div>
+		</div>
+		<!--    //////////////////////////////////////////////////////////////-->
+
+		<!--    页脚-->
+		<div class="footer">
+			<p>版权所有：齐家文化传播有限公司 湘ICP备00000000号 技术支持：保定宜迅 后台管理</p>
+		</div>
+        
+         
+
+       
+
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+

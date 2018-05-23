@@ -1,0 +1,359 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>index</title>
+    <link rel="stylesheet" href="Css/base.css">
+    <link rel="stylesheet" type="text/css" href="Css/css.css">
+    <link rel="stylesheet" href="CSS/dailijiameng.css">
+
+</head>
+
+<body>
+    <!--    //////////////////////////////////////////////////////////////-->
+<!--    顶部-->
+    <div class="headerwrap">
+        <div class="header">
+            <a href="index.html"><h1><img class="logo" src="Images/base/logo.png" alt=""></h1></a>
+            
+            <img class="logotitle" src="Images/base/logotitle.jpg" alt="">
+            
+            <img class="telimg" src="Images/base/tel.png" alt="">
+
+            <div class="login_box">
+				<!--登录-->
+					<div class="zhezhao" id="zhezhao"></div>
+					<div class="login_infor" id="login_infor">
+						<h6 class="dl_close" id="dl_close">关闭</h6>
+						<h5 class="idpw1">账号密码登录</h5>
+						<form method="post" action="">
+						<p><label class="label_input" for="dl_username">用户名</label><input type="text" id="dl_username" class="text_field" placeholder="ID/用户名/手机号" /></p>  
+        				<p><label class="label_input" for="dl_password">密&nbsp;&nbsp;码</label><input type="text" id="dl_password" class="text_field"  placeholder="密码"/></p>  
+						</form>
+						<a href="" class="forget">忘记密码?</a>
+						<h5 class="idpw2" >短信验证码登录</h5>
+						<form method="post" action="">
+						<p><label class="label_input" for="tel">手机号</label><input type="tel" id="tel" class="text_field_2" placeholder="请在此输入手机号" /><input type="button" class="yzm" value="发送验证码"></p>  
+        				<p><label class="label_input" for="yzm">验证码</label><input type="text" id="yzm" class="text_field"  placeholder="请在此输入短信验证码"/></p>  
+						</form>
+						<h5 class="idpw3">其他方式登录</h5>
+						<ul class="dl_other">
+							<li><a href=""><img src="Images/share/qq.png"></a></li>
+							<li><a href=""><img src="Images/share/weixin.png"></a></li>
+							<li><a href=""><img src="Images/share/sina.png"></a></li>
+						</ul><br>
+						<input type="submit" value="登录" class="submit">
+					</div>
+					
+					<!--注册-->
+					<div class="zhezhao" id="zhezhao_2"></div>
+					<div class="login_infor" id="zc_infor">
+						<h6 class="dl_close" id="zc_close">关闭</h6>
+						<form method="post" action="" style="margin-top: 20px;">
+						<p><label class="label_input ltm" for="zc_username">账号</label><input type="text" id="zc_username" class="text_field ltm" placeholder="ID/用户名/手机号" /></p>  
+        				<p><label class="label_input ltm" for="zc_password">密码</label><input type="text" id="zc_password" class="text_field ltm"  placeholder="密码"/></p> 
+        				<p><label class="label_input ltm" for="zc_password_2">确认密码</label><input type="text" id="zc_password_2" class="text_field ltm"  placeholder="密码"/></p>  
+						<p><label class="label_input ltm" for="tel">手机号</label><input type="tel" id="tel" class="text_field_2 ltm" placeholder="请在此输入您的手机号" /><input type="button" class="yzm ltm" value="发送验证码"></p>  
+        				<p><label class="label_input ltm" for="yzm_2">验证码</label><input type="text" id="yzm_2" class="text_field ltm"  placeholder="请查看您的短信验证码并输入"/></p>  
+						</form>
+						<ul class="zc_other">
+						<li>其他方式登录:</li>
+						<li><a href=""><img src="Images/share/qq.png"></a></li>
+						<li><a href=""><img src="Images/share/weixin.png"></a></li>
+						<li><a href=""><img src="Images/share/sina.png"></a></li>
+						</ul>
+						<input type="submit" value="立即注册" class="submit">
+					</div>
+					<em id="denglu">登录</em><span class="part">|</span><em id="zhuce">注册</em>
+				</div>
+				
+				<ul class="telbox">
+					<li style="font-size: 16px; line-height: 16px;">咨询热线：</li>
+					<li style="font-size: 20px; line-height: 20px;color: #c30c22; font-weight: bold;margin-top: 14px;">18562624920</li>
+				</ul>
+			</div>
+		</div>
+<script> 
+ var zhezhao=document.getElementById("zhezhao"); 
+ var login_infor=document.getElementById("login_infor"); 
+ var denglu=document.getElementById("denglu"); 
+ var dl_close=document.getElementById("dl_close"); 
+	
+ denglu.onclick=function() 
+ { 
+  zhezhao.style.display="block"; 
+  login_infor.style.display="block"; 
+ } 
+ dl_close.onclick=function() 
+ { 
+  zhezhao.style.display="none"; 
+  login_infor.style.display="none";  
+ } 
+ 
+ 
+ 
+ var zhezhao_2=document.getElementById("zhezhao_2"); 
+ var zc_infor=document.getElementById("zc_infor"); 
+ var zhuce=document.getElementById("zhuce"); 
+ var zc_close=document.getElementById("zc_close"); 
+	
+ zhuce.onclick=function() 
+ { 
+  zhezhao_2.style.display="block"; 
+  zc_infor.style.display="block"; 
+ } 
+ zc_close.onclick=function() 
+ { 
+  zhezhao_2.style.display="none"; 
+  zc_infor.style.display="none";  
+ } 
+</script> 
+        </div>
+    </div>
+    <!--    //////////////////////////////////////////////////////////////-->
+     
+<!--    导航-->
+    <div class="menu">
+        <ul>
+                <li><a href="">首页</a></li>
+                <li class="nav"><a href="Introduction.html">企业介绍</a>
+                    <ul>
+                        <li><a href="">企业动态</a></li>
+                        <li><a href="">企业动态</a></li>
+                        <li><a href="">企业动态</a></li>
+                        <li><a href="">企业动态</a></li>
+                        <li><a href="">企业动态</a></li>
+                    </ul>
+                </li>
+                <li><a href="news.html">企业动态</a>
+                    <ul>
+                        <li><a href="">企业动态</a></li>
+                        <li><a href="">企业动态</a></li>
+                        <li><a href="">企业动态</a></li>
+                        <li><a href="">企业动态</a></li>
+                        <li><a href="">企业动态</a></li>
+                    </ul>
+                </li>
+                <li><a href="lesson.html">在线课程</a>
+                    <ul>
+                        <li><a href="">企业动态</a></li>
+                        <li><a href="">企业动态</a></li>
+                        <li><a href="">企业动态</a></li>
+                        <li><a href="">企业动态</a></li>
+                        <li><a href="">企业动态</a></li>
+                    </ul>
+                </li>
+                <li><a href="teacherteam.html">讲师团队</a>
+                    <ul>
+                        <li><a href="">企业动态</a></li>
+                        <li><a href="">企业动态</a></li>
+                        <li><a href="">企业动态</a></li>
+                        <li><a href="">企业动态</a></li>
+                        <li><a href="">企业动态</a></li>
+                    </ul>
+                </li>
+                <li><a href="activity.html">往期活动</a>
+                    <ul>
+                        <li><a href="">企业动态</a></li>
+                        <li><a href="">企业动态</a></li>
+                        <li><a href="">企业动态</a></li>
+                        <li><a href="">企业动态</a></li>
+                        <li><a href="">企业动态</a></li>
+                    </ul>
+                </li>
+                <li><a style="background-color: #c30c22; " href="join.html">代理加盟</a>
+                    <ul>
+                        <li><a href="">企业动态</a></li>
+                        <li><a href="">企业动态</a></li>
+                        <li><a href="">企业动态</a></li>
+                        <li><a href="">企业动态</a></li>
+                        <li><a href="">企业动态</a></li>
+                    </ul>
+                </li>
+                <li><a href="partner.html">合作伙伴</a>
+                    <ul>
+                        <li><a href="">企业动态</a></li>
+                        <li><a href="">企业动态</a></li>
+                        <li><a href="">企业动态</a></li>
+                        <li><a href="">企业动态</a></li>
+                        <li><a href="">企业动态</a></li>
+                    </ul>
+                </li>
+                <li><a href="">家族网</a>
+                    <ul>
+                        <li><a href="">企业动态</a></li>
+                        <li><a href="">企业动态</a></li>
+                        <li><a href="">企业动态</a></li>
+                        <li><a href="">企业动态</a></li>
+                        <li><a href="">企业动态</a></li>
+                    </ul>
+                </li>
+                <li><a href="connection.html">联系我们</a></li>
+        </ul>
+    </div>
+    
+
+    
+    
+    <!--    //////////////////////////////////////////////////////////////-->
+    
+
+
+<!--conten内容 -->
+<div class="cl"></div> 
+   <div class="content">
+      <div class="inner_c">        
+         <div class="left">
+              <h1 class="bt">加入我们</h1>
+              <div class="rline"></div>
+                <ul>
+                   <li><a href="##">父母能量</a></li>
+                   <li><a href="##">生命能量</a></li>
+                   <li><a href="##">智慧父母</a></li>
+                   <li class="teshu"><a href="##">心芽之旅</a></li>
+                   <li><img src="images/quantizhao.jpg" alt="图片"></li>
+               </ul>
+          </div>
+          <div class="box">
+           
+            <div class="box_top">
+               <div class="return"> 
+            <p>当前位置&nbsp;:&nbsp;<a href="index.html">首页</a>&nbsp;>>&nbsp;
+            <a href="join.html">代理加盟</a></p>
+            </div>
+                <h4>融资上市咨询</h4>
+                <ul>
+                    <li class="li1">项目</li>
+                    <li class="li2">主要内容</li>
+                    <li class="li3">核心理念</li>
+                    <li class="li4">
+                        <h6>涵德汇博观点：</h6>
+                        <p class="p1">第一：企业上市是一把双刃剑，企业是否上市必须根据企业实际情况制定规划。</p>
+                        <p class="p1">第二：企业无论是否上市，企业阳光化、规范化经营，是企业优化改革的必经之路。</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="box_bottom">
+            <h4>咨询服务项目</h4>
+            <ul>
+                <li class="li5">阶段</li>
+                <li class="li6">步骤</li>
+                <li class="li7">服务内容</li>
+                <li class="li8">第一阶段</li>
+                <li class="li9">成立股份公司</li>
+                <li class="li10">
+                    <p class="p2">1、确定成立途经（股份改革）</p>
+                    <p class="p2">2、制定改制方案</p>
+                    <p class="p2">3、聘请验资、资产评估、审计等中介机构</p>
+                    <p class="p2">4、申请设立资料</p>
+                    <p class="p2">5、召开创立大会</p>
+                </li>
+                <li class="li11">第二阶段</li>
+                <li class="li12">上市前辅导</li>
+                <li class="li13">
+                    <p class="p2">1、聘请券商（主承销资格）</p>
+                    <p class="p2">2、辅导验收</p>
+                    <p class="p2">3、上市方案与可研报告</p>
+                </li>
+                <li class="li14">第三阶段</li>
+                <li class="li15">股票发行筹备</li>
+                <li class="li16">
+                    <p class="p2">1、确定发行结构</p>
+                    <p class="p2">2、发行目的</p>
+                    <p class="p2">3、发行规模</p>
+                    <p class="p2">4、分销架构</p>
+                    <p class="p2">5、投资者兴趣</p>
+                    <p class="p2">6、估值</p>
+                    <p class="p2">7、草拟招股书</p>
+                    <p class="p2">8、准备法律和会计文件</p>
+                </li>
+                <li class="li17">第四阶段</li>
+                <li class="li18">申报和审议</li>
+                <li class="li19">
+                    <p class="p2">1、申报材料制作</p>
+                    <p class="p2">2、开始审议程序</p>
+                    <p class="p2">3、估值/定位</p>
+                    <p class="p2">4、准备对监管部门的意见提出回应</p>
+                    <p class="p2">5、刊登招股书</p>
+                </li>
+                <li class="li20">第五阶段</li>
+                <li class="li21">促销和发行</li>
+                <li class="li22">
+                    <p class="p2">1、审核通过后决定发行</p>
+                    <p class="p2">2、推出研究报告</p>
+                    <p class="p2">3、准备分析员说明会和路演</p>
+                    <p class="p2">4、向研究分析员作公司和发行的介绍</p>
+                    <p class="p2">5、询价、促销</p>
+                    <p class="p2">6、确定规模和定价范围</p>
+                </li>
+                <li class="li23">第六阶段</li>
+                <li class="li24">股票上市及后续</li>
+                <li class="li25">
+                    <p class="p2">1、定价</p>
+                    <p class="p2">2、股份配置</p>
+                    <p class="p2">3、交易和稳定股价</p>
+                    <p class="p2">4、发行结束</p>
+                    <p class="p2">5、研究报道</p>
+                    <p class="p2">6、后市支持</p>
+                </li>
+            </ul>
+            </div>
+        </div>
+         
+    
+    
+       </div>
+    </div>     
+    
+<div class="cl"></div>   
+
+	
+<!--    底部导航-->
+		<div class="footernavwrap">
+			<div class="footernav">
+
+				<div class="box0">
+					<ul class="box1">
+						<h3>加入我们&nbsp;<br><span>WORK WITH US</span></h3>
+						<li class="text">如果您想成为家教师或者圣德齐家讲师来帮助别人，如果您想通过传播传统文化，实现自我价值，那就赶快加入我们吧！</li>
+					</ul>
+				</div>
+
+				<div style="margin-left: 30px;" class="box0">
+					<ul class="box1">
+						<h3>联系我们&nbsp;<br><span>CONTACT US</span></h3>
+						<li class="text">电话：18562624920 （温谛老师）<br>邮箱：shengdeqijia@163.com <br>地址：河北省保定市康泰国际10层<br></li>
+					</ul>
+				</div>
+				<div style="margin-left: 30px;" class="box0">
+					<ul class="box1">
+						<h3>分享到&nbsp;<br><span>SHARE TO</span></h3>
+						<li class="share ss">
+							<a href=""><img src="Images/share/weixin.png" alt=""></a>
+						</li>
+						<li class="share ss">
+							<a href=""><img src="Images/share/qq.png" alt=""></a>
+						</li>
+						<li class="share ss">
+							<a href=""><img src="Images/share/qzone.png" alt=""></a>
+						</li>
+						<li class="share ss">
+							<a href=""><img src="Images/share/sina.png" alt=""></a>
+						</li>
+					</ul>
+				</div>
+
+				<span class="map"><iframe src="map.html" width="370px" height="210px" frameborder="0" scrolling="no"></iframe></span>
+
+			</div>
+		</div>
+		<!--    //////////////////////////////////////////////////////////////-->
+
+		<!--    页脚-->
+		<div class="footer">
+			<p>版权所有：齐家文化传播有限公司 湘ICP备00000000号 技术支持：保定宜迅 后台管理</p>
+		</div>
+
+    
+</body>
+</html>

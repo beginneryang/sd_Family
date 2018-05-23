@@ -1,0 +1,247 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>在线课程子页</title>
+    <link rel="stylesheet" href="Css/zaixiankechengziye.css">
+    		<link rel="stylesheet" href="CSS/base.css">
+		<link rel="stylesheet" href="CSS/index.css">
+</head>
+
+<body>
+<!--    顶部-->
+    <div class="headerwrap">
+        <div class="header">
+            <a href="index.html"><h1><img class="logo" src="Images/base/logo.png" alt=""></h1></a>
+            
+            <img class="logotitle" src="Images/base/logotitle.jpg" alt="">
+            
+            <img class="telimg" src="Images/base/tel.png" alt="">
+
+            <div class="login_box">
+				<!--登录-->
+					<div class="zhezhao" id="zhezhao"></div>
+					<div class="login_infor" id="login_infor">
+						<h6 class="dl_close" id="dl_close">关闭</h6>
+						<h5 class="idpw1">账号密码登录</h5>
+						<form method="post" action="">
+						<p><label class="label_input" for="dl_username">用户名</label><input type="text" id="dl_username" class="text_field" placeholder="ID/用户名/手机号" /></p>  
+        				<p><label class="label_input" for="dl_password">密&nbsp;&nbsp;码</label><input type="text" id="dl_password" class="text_field"  placeholder="密码"/></p>  
+						</form>
+						<a href="" class="forget">忘记密码?</a>
+						<h5 class="idpw2" >短信验证码登录</h5>
+						<form method="post" action="">
+						<p><label class="label_input" for="tel">手机号</label><input type="tel" id="tel" class="text_field_2" placeholder="请在此输入手机号" /><input type="button" class="yzm" value="发送验证码"></p>  
+        				<p><label class="label_input" for="yzm">验证码</label><input type="text" id="yzm" class="text_field"  placeholder="请在此输入短信验证码"/></p>  
+						</form>
+						<h5 class="idpw3">其他方式登录</h5>
+						<ul class="dl_other">
+							<li><a href=""><img src="Images/share/qq.png"></a></li>
+							<li><a href=""><img src="Images/share/weixin.png"></a></li>
+							<li><a href=""><img src="Images/share/sina.png"></a></li>
+						</ul><br>
+						<input type="submit" value="登录" class="submit">
+					</div>
+					
+					<!--注册-->
+					<div class="zhezhao" id="zhezhao_2"></div>
+					<div class="login_infor" id="zc_infor">
+						<h6 class="dl_close" id="zc_close">关闭</h6>
+						<form method="post" action="" style="margin-top: 20px;">
+						<p><label class="label_input ltm" for="zc_username">账号</label><input type="text" id="zc_username" class="text_field ltm" placeholder="ID/用户名/手机号" /></p>  
+        				<p><label class="label_input ltm" for="zc_password">密码</label><input type="text" id="zc_password" class="text_field ltm"  placeholder="密码"/></p> 
+        				<p><label class="label_input ltm" for="zc_password_2">确认密码</label><input type="text" id="zc_password_2" class="text_field ltm"  placeholder="密码"/></p>  
+						<p><label class="label_input ltm" for="tel">手机号</label><input type="tel" id="tel" class="text_field_2 ltm" placeholder="请在此输入您的手机号" /><input type="button" class="yzm ltm" value="发送验证码"></p>  
+        				<p><label class="label_input ltm" for="yzm_2">验证码</label><input type="text" id="yzm_2" class="text_field ltm"  placeholder="请查看您的短信验证码并输入"/></p>  
+						</form>
+						<ul class="zc_other">
+						<li>其他方式登录:</li>
+						<li><a href=""><img src="Images/share/qq.png"></a></li>
+						<li><a href=""><img src="Images/share/weixin.png"></a></li>
+						<li><a href=""><img src="Images/share/sina.png"></a></li>
+						</ul>
+						<input type="submit" value="立即注册" class="submit">
+					</div>
+					<em id="denglu">登录</em><span class="part">|</span><em id="zhuce">注册</em>
+				</div>
+				
+				<ul class="telbox">
+					<li style="font-size: 16px; line-height: 16px;">咨询热线：</li>
+					<li style="font-size: 20px; line-height: 20px;color: #c30c22; font-weight: bold;margin-top: 14px;">18562624920</li>
+				</ul>
+			</div>
+		</div>
+<script> 
+ var zhezhao=document.getElementById("zhezhao"); 
+ var login_infor=document.getElementById("login_infor"); 
+ var denglu=document.getElementById("denglu"); 
+ var dl_close=document.getElementById("dl_close"); 
+	
+ denglu.onclick=function() 
+ { 
+  zhezhao.style.display="block"; 
+  login_infor.style.display="block"; 
+ } 
+ dl_close.onclick=function() 
+ { 
+  zhezhao.style.display="none"; 
+  login_infor.style.display="none";  
+ } 
+ 
+ 
+ 
+ var zhezhao_2=document.getElementById("zhezhao_2"); 
+ var zc_infor=document.getElementById("zc_infor"); 
+ var zhuce=document.getElementById("zhuce"); 
+ var zc_close=document.getElementById("zc_close"); 
+	
+ zhuce.onclick=function() 
+ { 
+  zhezhao_2.style.display="block"; 
+  zc_infor.style.display="block"; 
+ } 
+ zc_close.onclick=function() 
+ { 
+  zhezhao_2.style.display="none"; 
+  zc_infor.style.display="none";  
+ } 
+</script> 
+        </div>
+    </div>
+<div class="cl"></div>     
+<!--    导航-->
+    <div class="navwrap">
+        <ul class="navmain">
+                <li class="nav"><a style="color: white;" href="index.html">首页</a></li>
+                <li class="nav"><a style="color: white;" href="Introduction.html">企业介绍</a></li>
+                <li class="nav"><a style="color: white;" href="news.html">企业动态</a></li>
+                <li style="background-color: #c30c22; " class="nav"><a style="color: white;" href="lesson.html">在线课程</a></li>
+                <li class="nav"><a style="color: white;" href="teacherteam.html">讲师团队</a></li>
+                <li class="nav"><a style="color: white;" href="activity.html">往期活动</a></li>
+                <li class="nav"><a style="color: white;" href="join.html">代理加盟</a></li>
+                <li class="nav"><a style="color: white;" href="partner.html">合作伙伴</a></li>
+                <li class="nav"><a style="color: white;" href="#">家族网</a></li>
+                <li class="nav"><a style="color: white;" href="connection.html">联系我们</a></li>
+        </ul>
+    </div>
+<div class="cl"></div>
+<div class="content">
+    <!-- 内容区上部分 -->
+    <div class="top inner_c">
+        <!--内容区 左上部分 -->
+    	<div class="left"><img src="Images/zaixiankechengziye/fmnl.gif" alt=""></div>
+        <!-- 内容区右上部分 -->
+    	<div class="right">
+         <h2>父母能量</h2>
+         <ul>
+             <li class="box1">班级xx</li>
+             <li class="box2">x月x日开课-x月x日结课  共x节</li>
+         </ul>
+         <span>查看课程安排</span>
+         <ol>
+             <li class="box1">试听 多少钱?</li>
+             <li>x月x日开课-x月x日结课  共x节</li>
+         </ol>
+         <div class="box4"><a href="##">立即报名</a></div>
+        </div>
+    </div>
+    <!-- 内容区下部分 -->
+    <div class="inner_c bottom">
+        <!-- 内容区下左部分 -->
+        <div class="left">
+            <!-- 内容区下左部分1 -->
+            <div class="ltop">
+                <ul>
+                    <li><a href="#">报名须知</a></li>
+                    <li><a href="#">课程试听</a></li>
+                    <li><a href="#">课程详情</a></li>
+                    <li class="last"><a href="#">教学大纲</a></li>
+                </ul>
+                <h4 class="cl">报名须知</h4>
+                <ol >
+                    <li>报名原则：随时报名</li>
+                    <li>插班原则：随时科插班</li>
+                </ol>
+            </div>
+            <!-- 内容区下左部分2 -->
+            <div class="center1">
+                <h4>课程试听</h4>
+            </div>
+            <!-- 内容区下左部分3 -->
+            <div class="center2">
+                <h4>课程试听</h4>
+                <p>简介：《父母能量》课程深度分析父母在教子中常见的错误“套路”，引领学员走出身份限制与教子误区，让孩子心怀
+感恩，人生无比精彩。家庭是孩子一生永不退学的学校，父母是孩子永不退休的校长！一起走进《父母能量》，在这里
+不断强大自我的力量，精彩活自己，快乐伴子女，为咱们的孩子提供一个生命的坐标，让他们活出他们本来精彩的样子！</p>
+            </div>
+            <!-- 内容区下左部分4 -->
+            <div class="lbottom">
+                <h4>教学大纲</h4>
+            </div>
+        </div>
+        <!--内容区下右部分 -->
+        <div class="right">
+            <h3>主讲老师</h3>
+            <div class="rleft"></div>
+            <div class="rright">
+                <p class="cl">李占龙</p>
+                <ul>
+                    <li>课程：x</li>
+                    <li>粉丝：xxx.w</li>
+                </ul>
+            </div>
+            <div class="cl a">
+                    <a href="##"><img src="Images/zaixiankechengziye/wexinliuyan.gif" alt""></a>
+            </div>
+        </div>
+    </div>
+</div>
+		<!--    底部导航-->
+		<div class="footernavwrap">
+			<div class="footernav">
+
+				<div class="box0">
+					<ul class="box1">
+						<h3>加入我们&nbsp;<br><span>WORK WITH US</span></h3>
+						<li class="text">如果您想成为家教师或者圣德齐家讲师来帮助别人，如果您想通过传播传统文化，实现自我价值，那就赶快加入我们吧！</li>
+					</ul>
+				</div>
+
+				<div style="margin-left: 30px;" class="box0">
+					<ul class="box1">
+						<h3>联系我们&nbsp;<br><span>CONTACT US</span></h3>
+						<li class="text">电话：18562624920 （温谛老师）<br>邮箱：shengdeqijia@163.com <br>地址：河北省保定市康泰国际10层<br></li>
+					</ul>
+				</div>
+				<div style="margin-left: 30px;" class="box0">
+					<ul class="box1">
+						<h3>分享到&nbsp;<br><span>SHARE TO</span></h3>
+						<li class="share ss">
+							<a href=""><img src="Images/share/weixin.png" alt=""></a>
+						</li>
+						<li class="share ss">
+							<a href=""><img src="Images/share/qq.png" alt=""></a>
+						</li>
+						<li class="share ss">
+							<a href=""><img src="Images/share/qzone.png" alt=""></a>
+						</li>
+						<li class="share ss">
+							<a href=""><img src="Images/share/sina.png" alt=""></a>
+						</li>
+					</ul>
+				</div>
+
+				<span class="map" style="padding-left: 0px;"><iframe src="map.html" width="370px" height="210px" frameborder="0" scrolling="no"></iframe></span>
+
+			</div>
+		</div>
+		<!--    //////////////////////////////////////////////////////////////-->
+
+		<!--    页脚-->
+		<div class="footer">
+			<p>版权所有：齐家文化传播有限公司 湘ICP备00000000号 技术支持：保定宜迅 后台管理</p>
+		</div>
+
+    
+</body>
+</html>

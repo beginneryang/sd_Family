@@ -1,0 +1,268 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>讲师团队</title>
+    <link rel="stylesheet" href="Css/jiangshituandui.css">
+    <link rel="stylesheet" href="Css/base.css">
+    <link rel="stylesheet" type="text/css" href="Css/css.css">
+</head>
+
+<body>
+<!--    顶部-->
+    <div class="headerwrap">
+        <div class="header">
+            <a href="index.html"><h1><img class="logo" src="Images/base/logo.png" alt=""></h1></a>
+            
+            <img class="logotitle" src="Images/base/logotitle.jpg" alt="">
+            
+            <img class="telimg" src="Images/base/tel.png" alt="">
+
+            <div class="login_box">
+				<!--登录-->
+					<div class="zhezhao" id="zhezhao"></div>
+					<div class="login_infor" id="login_infor">
+						<h6 class="dl_close" id="dl_close">关闭</h6>
+						<h5 class="idpw1">账号密码登录</h5>
+						<form method="post" action="">
+						<p><label class="label_input" for="dl_username">用户名</label><input type="text" id="dl_username" class="text_field" placeholder="ID/用户名/手机号" /></p>  
+        				<p><label class="label_input" for="dl_password">密&nbsp;&nbsp;码</label><input type="text" id="dl_password" class="text_field"  placeholder="密码"/></p>  
+						</form>
+						<a href="" class="forget">忘记密码?</a>
+						<h5 class="idpw2" >短信验证码登录</h5>
+						<form method="post" action="">
+						<p><label class="label_input" for="tel">手机号</label><input type="tel" id="tel" class="text_field_2" placeholder="请在此输入手机号" /><input type="button" class="yzm" value="发送验证码"></p>  
+        				<p><label class="label_input" for="yzm">验证码</label><input type="text" id="yzm" class="text_field"  placeholder="请在此输入短信验证码"/></p>  
+						</form>
+						<h5 class="idpw3">其他方式登录</h5>
+						<ul class="dl_other">
+							<li><a href=""><img src="Images/share/qq.png"></a></li>
+							<li><a href=""><img src="Images/share/weixin.png"></a></li>
+							<li><a href=""><img src="Images/share/sina.png"></a></li>
+						</ul><br>
+						<input type="submit" value="登录" class="submit">
+					</div>
+					
+					<!--注册-->
+					<div class="zhezhao" id="zhezhao_2"></div>
+					<div class="login_infor" id="zc_infor">
+						<h6 class="dl_close" id="zc_close">关闭</h6>
+						<form method="post" action="" style="margin-top: 20px;">
+						<p><label class="label_input ltm" for="zc_username">账号</label><input type="text" id="zc_username" class="text_field ltm" placeholder="ID/用户名/手机号" /></p>  
+        				<p><label class="label_input ltm" for="zc_password">密码</label><input type="text" id="zc_password" class="text_field ltm"  placeholder="密码"/></p> 
+        				<p><label class="label_input ltm" for="zc_password_2">确认密码</label><input type="text" id="zc_password_2" class="text_field ltm"  placeholder="密码"/></p>  
+						<p><label class="label_input ltm" for="tel">手机号</label><input type="tel" id="tel" class="text_field_2 ltm" placeholder="请在此输入您的手机号" /><input type="button" class="yzm ltm" value="发送验证码"></p>  
+        				<p><label class="label_input ltm" for="yzm_2">验证码</label><input type="text" id="yzm_2" class="text_field ltm"  placeholder="请查看您的短信验证码并输入"/></p>  
+						</form>
+						<ul class="zc_other">
+						<li>其他方式登录:</li>
+						<li><a href=""><img src="Images/share/qq.png"></a></li>
+						<li><a href=""><img src="Images/share/weixin.png"></a></li>
+						<li><a href=""><img src="Images/share/sina.png"></a></li>
+						</ul>
+						<input type="submit" value="立即注册" class="submit">
+					</div>
+					<em id="denglu">登录</em><span class="part">|</span><em id="zhuce">注册</em>
+				</div>
+				
+				<ul class="telbox">
+					<li style="font-size: 16px; line-height: 16px;">咨询热线：</li>
+					<li style="font-size: 20px; line-height: 20px;color: #c30c22; font-weight: bold;margin-top: 14px;">18562624920</li>
+				</ul>
+			</div>
+		</div>
+<script> 
+ var zhezhao=document.getElementById("zhezhao"); 
+ var login_infor=document.getElementById("login_infor"); 
+ var denglu=document.getElementById("denglu"); 
+ var dl_close=document.getElementById("dl_close"); 
+	
+ denglu.onclick=function() 
+ { 
+  zhezhao.style.display="block"; 
+  login_infor.style.display="block"; 
+ } 
+ dl_close.onclick=function() 
+ { 
+  zhezhao.style.display="none"; 
+  login_infor.style.display="none";  
+ } 
+ 
+ 
+ 
+ var zhezhao_2=document.getElementById("zhezhao_2"); 
+ var zc_infor=document.getElementById("zc_infor"); 
+ var zhuce=document.getElementById("zhuce"); 
+ var zc_close=document.getElementById("zc_close"); 
+	
+ zhuce.onclick=function() 
+ { 
+  zhezhao_2.style.display="block"; 
+  zc_infor.style.display="block"; 
+ } 
+ zc_close.onclick=function() 
+ { 
+  zhezhao_2.style.display="none"; 
+  zc_infor.style.display="none";  
+ } 
+</script> 
+        </div>
+    </div>
+<div class="cl"></div>     
+<!--    导航-->
+    <div class="navwrap">
+        <ul class="navmain">
+                 <li class="nav"><a style="color: white;" href="index.html">首页</a></li>
+                <li class="nav"><a style="color: white;" href="Introduction.html">企业介绍</a></li>
+                <li class="nav"><a style="color: white;" href="news.html">企业动态</a></li>
+                <li class="nav"><a style="color: white;" href="lesson.html">在线课程</a></li>
+                <li style="background-color: #c30c22; " class="nav"><a style="color: white;" href="teacherteam.html">讲师团队</a></li>
+                <li class="nav"><a style="color: white;" href="activity.html">往期活动</a></li>
+                <li class="nav"><a style="color: white;" href="join.html">代理加盟</a></li>
+                <li class="nav"><a style="color: white;" href="partner.html">合作伙伴</a></li>
+                <li class="nav"><a style="color: white;" href="">家族网</a></li>
+                <li class="nav"><a style="color: white;" href="connection.html">联系我们</a></li>
+        </ul>
+    </div>
+
+<div class="cl"></div>
+
+
+<!--conten内容 -->
+<div class="cl"></div> 
+   <div class="content">
+      <div class="inner_c">        
+            <div class="left">
+               <h1 class="bt">讲师团队</h1>
+               <div class="rline"></div>
+                  <ul>
+                   <li><a href="##">父母能量</a></li>
+                   <li><a href="##">生命能量</a></li>
+                   <li><a href="##">智慧父母</a></li>
+                   <li class="teshu"><a href="##">心芽之旅</a></li>
+                   <li><img src="images/quantizhao.jpg" alt="图片"></li>
+                 </ul>
+            </div>
+                    <div class="right">
+                    <div class="return"> 
+            <p>当前位置&nbsp;:&nbsp;<a href="index.html">首页</a>&nbsp;>>&nbsp;
+            <a href="teacherteam.html">讲师团队</a></p>
+            </div> 
+                <ul>
+                    <a href="">
+                       <li class="box1"> 
+                        <img src="Images/jiangshituandui/liuyuegang.jpg"  alt="李跃刚">
+                        <ul class="box2">
+                            <h1>刘跃刚&nbsp;导师</h1>
+                            <li><img src="Images/jiangshituandui/dian.jpg" alt="点">北京圣德齐家文化传播有限公司  董事长</li>
+                            <li><img src="Images/jiangshituandui/dian.jpg" alt="点">保定市圣德传统文化研究会  副会长</li>
+                            <li><img src="Images/jiangshituandui/dian.jpg" alt="点">河北蒙域王子羊绒纺织股份有限公司副总裁、coo</li>
+                            <li><img src="Images/jiangshituandui/dian.jpg" alt="点">美国德爱尔羊绒国际集团股份有限公司副总裁、coo</li>
+                            <li><img src="Images/jiangshituandui/dian.jpg" alt="点">北京涵德汇博文化传播有限公司董事长</li>
+                            <li><img src="Images/jiangshituandui/dian.jpg" alt="点">从2011年至今，先后在国内外投资及合伙创立十多家公司行业涉及高科技，金融投资、教育培训、文化传媒等</li>
+                        </ul>                 
+                    </li>
+                    </a>
+                    <a href="">
+                        <li class="box1">
+                         <img src="Images/jiangshituandui/zhengwei.jpg" alt="郑伟">
+                        <ul class="box2">
+                            <h1>郑伟&nbsp;导师</h1>
+                            <li><img src="Images/jiangshituandui/dian.jpg" alt="点">北京天籁圣德文化传播有限公司 创始人、执行董事</li>
+                            <li><img src="Images/jiangshituandui/dian.jpg" alt="点">保定市圣德传统文化研究会 创始人、会长</li>
+                            <li><img src="Images/jiangshituandui/dian.jpg" alt="点">河北省黄河国学研究院 副院长</li>
+                            <li><img src="Images/jiangshituandui/dian.jpg" alt="点">河北省传统文化研究会 副会长</li>
+                            <li><img src="Images/jiangshituandui/dian.jpg" alt="点">中华文化传播发展委员会 顾问</li>
+                            <li><img src="Images/jiangshituandui/dian.jpg" alt="点">府内派传统杨氏太极拳研究会 副会长</li>
+                            <li><img src="Images/jiangshituandui/dian.jpg" alt="点">府内派传统杨氏太极拳 传人 </li>
+                            <li><img src="Images/jiangshituandui/dian.jpg" alt="点">中国禅宗-临济 第四十六代传人</li>
+                            <li><img src="Images/jiangshituandui/dian.jpg" alt="点">幸福企业私董会/内董会 导师、总教练</li>
+                        </ul>
+                    </li>
+                    </a>
+                    <a href="">
+                    <li class="box1">
+                         <img src="Images/jiangshituandui/lizhanlong.jpg" alt="李占龙">
+                       <ul class="box2">
+                            <h1>李占龙&nbsp;老师</h1>
+                            <li><img src="Images/jiangshituandui/dian.jpg" alt="点">北京圣德齐家文化传播发展有限公司 监事</li>
+                            <li><img src="Images/jiangshituandui/dian.jpg" alt="点">保定市圣德传统文化研究会  理事</li>
+                            <li><img src="Images/jiangshituandui/dian.jpg" alt="点">北京涵德汇博文化传播有限公司 发起人、市场总监</li>
+                            <li><img src="Images/jiangshituandui/dian.jpg" alt="点">河北励智企划管理咨询有限公司 咨询师</li>
+                            <li><img src="Images/jiangshituandui/dian.jpg" alt="点">河北木子服饰有限公司  运营总监、副总经理</li>
+                            <li><img src="Images/jiangshituandui/dian.jpg" alt="点">2009年至今先后从事市场营销，团队建设，企业内部运营系统搭建管理里类工作至今</li>
+                            
+                            
+                       </ul>
+                    </li>
+                    </a>
+                    <a href="">
+                    <li class="box1 box1ts">
+                         <img src="Images/jiangshituandui/zhouyajuan.jpg" alt="周亚娟">
+                       <ul class="box2">
+                            <h1>周亚娟&nbsp;老师</h1>
+                            <li><img src="Images/jiangshituandui/dian.jpg" alt="点">北京圣德齐家文化传播有限公司  公益讲师</li>
+                            <li><img src="Images/jiangshituandui/dian.jpg" alt="点">保定圣德传统文化研究会  副会长</li>
+                            <li><img src="Images/jiangshituandui/dian.jpg" alt="点">保定市文体教育局   德育工作负责人</li>
+                            <li><img src="Images/jiangshituandui/dian.jpg" alt="点">中华教育智慧公益师资培训班  负责人</li>
+                            <li><img src="Images/jiangshituandui/dian.jpg" alt="点">保定青年爱心志愿者协会  理事</li>
+                            <li><img src="Images/jiangshituandui/dian.jpg" alt="点">她从事教育工作近三十年来曾受各地政府、妇联、学校、企业、公民道德论坛之邀，分享教育专题数场。主要课程《教子                                 有方》《礼仪之美》《幸福为师》《做智慧女人，享幸福人生》等</li>
+                       </ul>
+                    </li>
+                    </a>
+                </ul>
+                <p>共<i>13</i>条记录<em>1</em><span><a href="">2</a></span><span><a href="">3</a></span><span><a href="">下一页></a></span><span><a href="">末页</a></span></p>
+            </div>
+       </div>
+    </div>     
+    
+<div class="cl"></div>   
+<!--    底部导航-->
+		<div class="footernavwrap">
+			<div class="footernav">
+
+				<div class="box0">
+					<ul class="box1">
+						<h3>加入我们&nbsp;<br><span>WORK WITH US</span></h3>
+						<li class="text">如果您想成为家教师或者圣德齐家讲师来帮助别人，如果您想通过传播传统文化，实现自我价值，那就赶快加入我们吧！</li>
+					</ul>
+				</div>
+
+				<div style="margin-left: 30px;" class="box0">
+					<ul class="box1">
+						<h3>联系我们&nbsp;<br><span>CONTACT US</span></h3>
+						<li class="text">电话：18562624920 （温谛老师）<br>邮箱：shengdeqijia@163.com <br>地址：河北省保定市康泰国际10层<br></li>
+					</ul>
+				</div>
+				<div style="margin-left: 30px;" class="box0">
+					<ul class="box1">
+						<h3>分享到&nbsp;<br><span>SHARE TO</span></h3>
+						<li class="share ss">
+							<a href=""><img src="Images/share/weixin.png" alt=""></a>
+						</li>
+						<li class="share ss">
+							<a href=""><img src="Images/share/qq.png" alt=""></a>
+						</li>
+						<li class="share ss">
+							<a href=""><img src="Images/share/qzone.png" alt=""></a>
+						</li>
+						<li class="share ss">
+							<a href=""><img src="Images/share/sina.png" alt=""></a>
+						</li>
+					</ul>
+				</div>
+
+				<span class="map"><iframe src="map.html" width="370px" height="210px" frameborder="0" scrolling="no"></iframe></span>
+
+			</div>
+		</div>
+		<!--    //////////////////////////////////////////////////////////////-->
+
+		<!--    页脚-->
+		<div class="footer">
+			<p>版权所有：齐家文化传播有限公司 湘ICP备00000000号 技术支持：保定宜迅 后台管理</p>
+		</div>
+
+    
+</body>
+</html>
