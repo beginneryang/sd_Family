@@ -1,0 +1,21 @@
+/* */
+#playBox{ margin:0px auto; background:#333; position:relative; z-index: -100px;}
+#playBox .oUlplay { width:9999px; position:absolute; left:0; top:0;}
+#playBox .oUlplay li{ float:left;}
+#playBox .pre{ cursor:pointer; width:45px; height:45px; background:url(../images/index/l.png) no-repeat; position:absolute; top:190px; left:10px; z-index:10;}
+#playBox .next{ cursor:pointer; width:45px; height:45px; background:url(../images/index/r.png) no-repeat; position:absolute; top:190px; right:10px; z-index:10;}
+#playBox .smalltitle {width:1000px; height:10px; position:relative; bottom:-540px; left: 55%; z-index:10}
+#playBox .smalltitle ul{ width:150px; margin:0 auto;}
+#playBox .smalltitle ul li{ width:12px; height:12px; margin:0 5px; border-radius:10px; background:#ffffff; float:left; overflow:hidden;*display:inline;*zoom:1;}
+#playBox .smalltitle .thistitle{ background:#69aaec;}
+
+#int_playBox{ margin:0px auto; background:#333; position:relative;}
+#int_playBox .int_oUlplay { width:9999px; position:absolute; left:0; top:0;}
+#int_playBox .int_oUlplay li{ float:left;}
+#int_playBox .int_pre{ cursor:pointer; width:30px; height:60px; background:url(../images/index/int_prev.png) no-repeat; position:absolute; top:109px; left:0px; z-index:10;}
+#int_playBox .int_next{ cursor:pointer; width:30px; height:60px; background:url(../images/index/int_next.png) no-repeat; position:absolute; top:109px; right:0px; z-index:10;}
+#int_playBox .int_smalltitle {width:410px; height:10px; position:absolute;bottom: -300px; z-index:10}
+#int_playBox .int_smalltitle ul{ width:100px; margin:0 auto;}
+#int_playBox .int_smalltitle ul li{ width:6px; height:6px; margin:0 5px; border-radius:10px; background:#ffffff; float:left; overflow:hidden;*display:inline;*zoom:1;}
+#int_playBox .int_smalltitle .int_thistitle{ background:#007CFF;}
+
